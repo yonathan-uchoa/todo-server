@@ -1,4 +1,4 @@
-package kaveski.yonathan.todoserver.security;
+package kaveski.yonathan.todoserver.config;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

@@ -24,12 +24,12 @@ public class TaskController {
     @Autowired
     private ListsService listsService;
 
-    @GetMapping("/{listsId}")
-    public ResponseEntity<List<Task>> searchByListId(@PathVariable Long listsId){
-        List<Task> _tasks = taskService.searchByListId(listsId);
+    @GetMapping("/{listsID}")
+    public ResponseEntity<List<Task>> searchByListId(@PathVariable(value = "listID") Long listsID){
+        List<Task> _tasks = taskService.searchByListId(listsID);
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(_tasks);
     }
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<Task> save(@RequestBody @Valid TaskPostRequestBody taskDTO){
         Optional<Lists> _lists = listsService.searchById(taskDTO.getListId());
         if(_lists.isEmpty()) ResponseEntity.notFound().build();

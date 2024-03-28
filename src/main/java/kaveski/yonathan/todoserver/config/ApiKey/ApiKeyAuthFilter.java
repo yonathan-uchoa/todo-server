@@ -1,4 +1,4 @@
-package kaveski.yonathan.todoserver.security.ApiKey;
+package kaveski.yonathan.todoserver.config.ApiKey;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

@@ -1,4 +1,4 @@
-package kaveski.yonathan.todoserver.security.ApiKey;
+package kaveski.yonathan.todoserver.config.ApiKey;
 
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,7 +1,6 @@
-package kaveski.yonathan.todoserver.security.ApiKey;
+package kaveski.yonathan.todoserver.config.ApiKey;
 
 import jakarta.servlet.http.HttpServletRequest;
-import kaveski.yonathan.todoserver.security.ApiKey.ApiKeyAuth;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
